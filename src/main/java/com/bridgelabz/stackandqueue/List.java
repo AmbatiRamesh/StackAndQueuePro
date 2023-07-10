@@ -4,7 +4,7 @@ public class List {
     Node head;
     class Node {
         Object data;
-        Node ref; // reference to next node
+        Node ref; // reference to next object in the sequence
         Node(Object data) {
             this.data = data;
         }
@@ -23,6 +23,9 @@ public class List {
             temp.ref = newNode;
         }
     }
+    public void popFirst() {
+        head = head.ref;
+    }
     public void display() {
         Node temp = head;
         if (head == null)
@@ -33,6 +36,7 @@ public class List {
                     System.out.print(temp.data + " > ");
                 else
                     System.out.println(temp.data);
+
                 temp = temp.ref;
             }
         }

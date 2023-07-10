@@ -8,12 +8,21 @@ public class StackAndQueue {
     public void display() {
         lists.display();
     }
+    public void pop() {
+        lists.popFirst();
+    }
     public static void main(String[] args) {
         System.out.println("welcome to stack program");
         StackAndQueue stack = new StackAndQueue();
         stack.push(56);
         stack.push(30);
         stack.push(70);
+        stack.display();
+        stack.pop();
+        stack.display();
+        stack.pop();
+        stack.display();
+        stack.pop();
         stack.display();
     }
 }

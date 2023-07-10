@@ -2,28 +2,19 @@ package com.bridgelabz.stackandqueue;
 import java.util.*;
 public class StackAndQueue {
     List lists = new List();
-    public void push(Object data) {
-        lists.peakLast(data);
+    public void enQueue(Object data) {
+        lists.addFirst(data);
     }
     public void display() {
         lists.display();
     }
-    public void pop() {
-        lists.popFirst();
-    }
     public static void main(String[] args) {
-        System.out.println("welcome to stack program");
-        StackAndQueue stack = new StackAndQueue();
-        stack.push(56);
-        stack.push(30);
-        stack.push(70);
-        stack.display();
-        stack.pop();
-        stack.display();
-        stack.pop();
-        stack.display();
-        stack.pop();
-        stack.display();
+        System.out.println("welcome to Queue program");
+        StackAndQueue queue = new StackAndQueue();
+        queue.enQueue(70);
+        queue.enQueue(30);
+        queue.enQueue(56);
+        queue.display();
     }
 }
 
